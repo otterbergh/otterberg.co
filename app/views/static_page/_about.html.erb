@@ -1,0 +1,20 @@
+<section id="profile" class="about-container">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2">
+				<h1 class="about-header">Profil</h1>
+				<hr>
+				<img class="img-responsive img-rounded" src="/assets/me.jpg" style="margin: 2em auto;">
+				<ul class="list-unstyled">
+					<li><strong>Namn</strong> Henric Otterberg.
+					<li><strong>Företag</strong> Otterberg Consulting AB.
+					<li><strong>Plats</strong> Växjö, Sweden.
+					<li><strong>Ålder</strong> <%= (DateTime.now - DateTime.parse('1987-03-06 21:46:00')).to_i / 365 %> år.
+				</ul>
+				<p>
+					Hej, mitt namn är Henric. För tillfället bor jag i Växjö där jag arbetar som en frilans webbdesigner och IT-konsult via eget företag.
+				</p>
+			</div>
+		</div>
+	</div>
+</section>

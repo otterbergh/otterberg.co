@@ -1,0 +1,45 @@
+@import "variables";
+
+.hero-container {
+	min-height: 100vh;
+	width: 100%;
+	padding-top: 20%;
+	background: url(/assets/masthead.jpg) no-repeat center center fixed;
+	background-size: cover;
+	color: $green;
+	
+	.header {
+		text-align: center;
+
+		h1 {
+			font-size: 6em;
+			@media screen and (max-width: 767px) { font-size: 4em; }
+		}
+
+		h2 {
+			font-size: 2.5em;
+			@media screen and (max-width: 767px) { font-size: 2em; }
+			color: $white;
+		}
+
+		.plus {
+			color: $green;
+		}
+
+		.arrow-down {
+			margin-top: 15em;
+			@media screen and (max-width: 767px) { margin-top: 10em; }
+			.icon-down-open-big { margin-right: 0 !important; margin-left: 2px !important; }
+			a {
+				font-size: 50px;
+				color: $green;
+				transition: all 0.3s ease;
+
+				&:hover,&:active,&:focus,&:visited {
+					color: darken($green, 3%);
+					font-size: 58px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,63 @@
+@import "variables";
+
+.nav-container {
+	display: none;
+	position: fixed;
+	z-index: 77;
+	top: 35%;
+	right: 30px;
+
+	@media screen and (max-width: 767px) { right: 5px; }
+
+	.nav-item {
+		display: block;
+		opacity: 0.7;
+		border-radius: 5px;
+		margin: 20px 10px !important;
+		width: 20px !important;
+		height: 20px !important;
+		background-color: rgba(0,0,0,0.5);
+		border: 0;
+		padding: 0 !important;
+
+		&:hover {
+			background-color: rgba(0,0,0,0.5);
+		}
+
+		@media screen and (min-width: 768px) {
+			&:hover {
+				background-color: $green;
+			}
+		}
+	}
+
+	li.active .nav-item {
+		background-color: $green;
+	}
+
+	.nav-label {
+		display: none;
+		position: absolute;
+		right: 50px;
+		width: 80px;
+		height: 20px;
+		line-height: 20px;
+		border-radius: 5px 0 0 5px;
+		background-color: rgba(0,0,0,0.8);
+		color: $white;
+		text-align: center;
+		font-weight: 600;
+				
+		&:after {
+			content: ' ';
+			position: absolute;
+			left: 100%;
+			top: 0;
+			width: 0;
+			height: 0;
+			border-top: 10px solid transparent;
+			border-left: 12px solid rgba(0,0,0,0.8);
+			border-bottom: 10px solid transparent;
+		}
+	}
+}

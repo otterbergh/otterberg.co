@@ -1,0 +1,95 @@
+@import "variables";
+
+.services-container {
+	min-height: 100vh;
+	background-color: lighten(#f3efe0, 5%);
+	text-align: center;
+
+	.header {
+		position: relative;
+		padding: 50px;
+		margin-bottom: 200px;
+		@media screen and (max-width: 767px) { margin-bottom: 40px; }
+		background-color: $green;
+
+		h1 {
+			margin: 3px auto;
+			text-align: center;
+			font-size: 4em;
+			@media screen and (max-width: 767px) { font-size: 1.7em; }
+		}
+
+		&:after {
+			position: absolute;
+			content: " ";
+			left: 50%;
+			margin-left: -150px;
+			border-top: solid 120px $green;
+			border-left: solid 150px transparent;
+			border-right: solid 150px transparent;
+
+			@media screen and (max-width: 767px) {
+				margin-left: -120px;
+				border-top: solid 100px $green;
+				border-left: solid 120px transparent;
+				border-right: solid 120px transparent;
+			}
+		}
+	}
+
+	.item {
+
+		@media screen and (max-width: 767px) { margin: 60px; }
+
+		i {
+			font-size: 8em;
+			color: $red;
+		}
+
+		h2 {
+			font-size: 1.5em;
+		}
+	}
+
+	hr {
+		border: 0;
+		height: 1px;
+		background-color: lighten($black, 40%);
+		color: lighten($black, 40%) !important;
+		margin-bottom: 1em;
+	}
+
+	.skills {
+		h2 {
+			color: $green;
+			font-weight: 100;
+			font-size: 3em;
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 0.5em;
+			margin-bottom: 1em;
+		}
+
+		.skill {
+			display: block;
+			font-size: 1.5em;
+			margin-bottom: 0.5em;
+			text-align: left;
+			@media screen and (max-width: 767px) { text-align: center; }
+
+			i {
+				color: $black;
+				&.green {
+					color: $green;
+				}
+			}
+		}
+	}
+
+	p {
+		margin: 2em auto;
+		font-size: 1.6em;
+		color: $black;
+	}
+}

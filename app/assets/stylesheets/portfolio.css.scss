@@ -1,0 +1,36 @@
+@import "variables";
+
+
+.portfolio-container {
+	min-height: 100vh;
+
+	.container-fluid {
+		padding: 0;
+		margin: 0;
+	}
+
+	.item {
+		position: relative;
+		margin: 0;
+		padding: 0;
+		height: 50vh;
+		background-color: $green;
+
+		.header {
+			width: 100%;
+			position: absolute;
+			bottom: 0;
+			height: 80px;
+			color: $white;
+			background-color: rgba(0,0,0,0.7);
+			font-size: 40px;
+			line-height: 80px;
+			text-align: center;
+		}
+
+		&.vertigo {
+			background: url(/assets/vertigo.png) no-repeat center center;
+			background-size: cover;
+		}
+	}
+}

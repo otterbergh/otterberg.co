@@ -1,0 +1,32 @@
+@import "variables";
+
+.social-container {
+	position: fixed;
+	z-index: 99;
+	bottom: 30px;
+	right: 30px;
+	font-size: 30px;
+	a {
+		color: $green;
+
+		&:hover {
+			color: darken($green, 3%);
+		}
+	}
+}
+
+.social-menu {
+	display: none;
+	position: fixed;
+	z-index: 99;
+	bottom: 30px;
+	right: 80px;
+	font-size: 30px;
+	a {
+		color: $green;
+
+		&:hover {
+			color: darken($green, 3%);
+		}
+	}
+}

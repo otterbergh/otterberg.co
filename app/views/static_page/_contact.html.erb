@@ -1,0 +1,31 @@
+<footer id="contact" class="contact-container">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8">
+				<h2>Kontakt</h2>
+				<%= form_tag('/message', remote: true, class: 'form-horizontal contact-form') do %>
+					<div class="form-group">
+						<div class="col-sm-10">
+							<input class="form-control" type="email" id="sender" name="sender" placeholder="Din e-post...">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-10">
+							<textarea class="form-control" type="text" id="message" name="message" placeholder="Ditt meddelande..." rows="15"></textarea>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-10">
+							<button class="btn btn-lg btn-primary pull-right" type="submit" name="commit">Skicka</button>
+						</div>
+					</div>
+				<% end %>
+			</div>
+			<div class="col-sm-4">
+				<p class="phone">+46 (0)73 411 73 54</p>
+				<p><a href="mailto:henric@otterberg.co">henric@otterberg.co</a></p>
+			</div>
+		</div>
+		<p class="copy">&copy; Otterberg Consulting AB</p>
+	</div>
+</footer>
