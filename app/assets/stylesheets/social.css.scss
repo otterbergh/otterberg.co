@@ -11,6 +11,7 @@
 
 		&:hover,&:active,&:focus,&:visited {
 			color: darken($green, 3%);
+			text-decoration: none;
 		}
 	}
 }
@@ -27,6 +28,7 @@
 
 		&:hover,&:active,&:focus,&:visited {
 			color: darken($green, 3%);
+			text-decoration: none;
 		}
 	}
 }
