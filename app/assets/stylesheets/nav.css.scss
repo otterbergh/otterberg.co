@@ -25,8 +25,12 @@
 		}
 
 		@media screen and (min-width: 768px) {
-			&:hover,&:active,&:focus,&:visited {
+			&:hover {
 				background-color: $green;
+			}
+			
+			&:active,&:focus,&:visited {
+				background-color: rgba(0,0,0,0.5);
 			}
 		}
 	}
