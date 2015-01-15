@@ -9,7 +9,7 @@
 	a {
 		color: $green;
 
-		&:hover {
+		&:hover,&:active,&:focus,&:visited {
 			color: darken($green, 3%);
 		}
 	}
@@ -25,7 +25,7 @@
 	a {
 		color: $green;
 
-		&:hover {
+		&:hover,&:active,&:focus,&:visited {
 			color: darken($green, 3%);
 		}
 	}
