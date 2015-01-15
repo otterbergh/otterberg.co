@@ -20,12 +20,12 @@
 		border: 0;
 		padding: 0 !important;
 
-		&:hover {
+		&:hover,&:active,&:focus,&:visited {
 			background-color: rgba(0,0,0,0.5);
 		}
 
 		@media screen and (min-width: 768px) {
-			&:hover {
+			&:hover,&:active,&:focus,&:visited {
 				background-color: $green;
 			}
 		}
