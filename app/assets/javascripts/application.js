@@ -88,3 +88,7 @@ $(function () {
 		$('.contact-form button[type=submit]').prop('disabled', 'disabled');
 	});
 });
+
+$(window).load(function() {
+	$('#loader').fadeOut();
+});
